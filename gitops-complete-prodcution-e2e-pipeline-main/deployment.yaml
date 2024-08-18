@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: complete-prodcution-e2e-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: complete-prodcution-e2e-deployment
+  template:
+    metadata:
+      labels:
+        app: complete-prodcution-e2e-deployment
+        image: 
+    spec:
+      resources:
+       limits : 
+         memory: "256MI"
+         cpu: "500m"
+      ports:
+      -  containerPort: 8080
+      
+  

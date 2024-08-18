@@ -1,0 +1,6 @@
+5 vm
+2 jenkins (ui+agent)
+1 sonarqube 
+1 k8s 
+1 argocd
+===================================
